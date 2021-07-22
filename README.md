@@ -16,12 +16,12 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 ### `WaitAndRetry`
-Standby time: 5s<br />
+Standby time: 5<br />
 Retry Attempt: 0s, 2s, 4s, 8s, 16s<br />
 OnRetry: has LogWarning
 
 ### `CircuitBreaker`
-Allowed before: 3s<br />
+Allowed before: 3<br />
 Duration of break: 15s<br />
 OnBreak: has LogWarning<br />
 OnReset: has LogWarning
