@@ -11,6 +11,7 @@ public void ConfigureServices(IServiceCollection services)
         client.BaseAddress = new Uri("https://localhost:5001");
     })
     .AddPollyWithRetryAndCircuitBreaker(services); //CODE HERE
+    
     services.AddControllers();
 }
 ```
